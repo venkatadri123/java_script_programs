@@ -1,0 +1,13 @@
+1. HTML: HeyperText Markup Language
+>> Adds structure to our web pages.
+>> Tags used for eg <div>, <section>, <p>
+
+2. CSS: Cascading Style Sheet.
+>> Adds styles to our webpages.
+>> Ex- colors, borders, margin, umage, positions, ect.
+>> Can use ids, classes or direct tags to reference HTML tags.
+
+3. JS:  JavaScript.
+>> Adds programming to our web pages.
+>> Adds Functionality, Ex- client side validation, effects & events.
+

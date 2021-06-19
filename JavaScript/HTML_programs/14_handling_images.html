@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function setNewImage()
+        {
+            document.getElementById("img1").src="/Users/venkatdri/Desktop/JavaScript/heart.jpeg";
+        }
+        function setOldImage()
+        {
+            document.getElementById("img1").src="/Users/venkatdri/Desktop/JavaScript/Nature.jpeg";
+        }
+    </script>
+</head>
+<body>
+    <img id="img1" onmouseover="setNewImage()" 
+    onmouseout="setOldImage()" 
+    src="/Users/venkatdri/Desktop/JavaScript/flower.jpeg" alt="Italian Trulli" width="300">
+</body>
+</html>
