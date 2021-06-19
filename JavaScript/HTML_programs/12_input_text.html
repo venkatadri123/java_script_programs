@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // function fn1()
+        // {
+        //     var user_name=document.getElementById("text1").value;
+        //     var password=document.getElementById("text2").value;
+        //     // document.write("username: " + user_name)
+        //     // document.write("password: " + password)
+        //     if(user_name=="venkey" && password=="1234")
+        //     {
+        //         alert("User login")
+        //     }
+        //     else
+        //     {
+        //         alert("Credentials are invalid")
+        //     }
+        // }
+
+
+
+        // function fn2()
+        // {
+        //     var rd1 = document.getElementById("rd1");
+        //     var rd2 = document.getElementById("rd2");
+        //     if(rd1.checked==true)
+        //         alert("The channel selected: "+ rd1.value);
+        //     else if(rd2.checked==true)
+        //         alert("The channel selected is: "+rd2.value);
+        //     else
+        //     alert("No channel selected")
+        // }
+
+
+
+        function fn3()
+        {
+            var select = document.getElementById("selectbox");
+            alert(select.options[select.selectedIndex].value)
+        }
+    </script>
+</head>
+<body>
+    <!-- <input id="text1" placeholder="Username">
+    <input type="password" id="text2" placeholder="password">
+    <br>
+    <button onclick="fn1()" id="btn1">Click Me</button> -->
+
+
+    <!-- Getting input from the radio button -->
+    <!-- <input id="rd1" name="grp1" type="radio" value="simple snippet">Simple Snippet</input><br>
+    <input id="rd2" name="grp1" type="radio" value="Telusko">Telusko</input>
+    <br>
+
+    <button onclick="fn2()" id="btn1">Click Me</button> -->
+
+
+    <!-- getting input from the select  -->
+    <select id="selectbox">
+        <option value="Simple Snippet">Simple Snippet</option>
+        <option value="Telusko Lernings">Telusko Lernings</option>
+        <option value="Venkey Learnings">Venkey Learnings</option>
+    </select>
+    <br>
+    <button onclick="fn3()">Click Me</button>
+
+    
+</body>
+</html>

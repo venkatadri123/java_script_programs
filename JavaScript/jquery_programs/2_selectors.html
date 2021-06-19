@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Selectors</title>
+    <link rel="stylesheet" href="/Users/venkatdri/Desktop/JavaScript/css/style.css">
+
+    <!-- jQuery selectors are one of the most important parts of the jQuery library.
+    jQuery selectors allow you to select and manipulate HTML element(s).
+    jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, values of attributes and much more. It's based on the existing CSS Selectors, and in addition, it has some own custom selectors.
+    All selectors in jQuery start with the dollar sign and parentheses: $().
+    The purpose of jQuery is to make it much easier to use JavaScript on your website. jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code. jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation. -->
+</head>
+<body>
+    <h2 class="myhead" id="h21">Selecrors up Jquery</h2>
+    <h2 class="myhead" >Selecrors up Jquery</h2>
+    <h2>Selecrors up Jquery</h2>
+    <div class="myhead">
+        <p>This is Para</p>
+    </div>
+    <button onclick="fn1()" id="btn1">Click Me</button>
+    
+</body>
+<script src="/Users/venkatdri/Desktop/JavaScript/jquery/jquery.js"></script>
+<script>
+    function fn1()
+    {
+        // # is used for selecting id
+        // . is used for selecting the class
+        // document.getElementById();
+        // $("h2").action();
+        $(".myhead").fadeToggle()
+
+    }
+</script>
+
+</html>

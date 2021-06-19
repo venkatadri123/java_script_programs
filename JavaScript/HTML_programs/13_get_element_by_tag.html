@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // function changeStyling()
+        // {
+        //     var para = document.getElementsByTagName("p");
+        //     // para[0].style.fontSize = 50;
+        //     // para[1].style.color = 'red';
+        //     // para[2].style.fontStyle = 'italic';
+        //     // para[3].style.fontWeight = 'bolt';
+        //     // para[4].style.color = 'red';
+        //     for (var i=0;i<para.length;i++)
+        //     {
+        //         para[i].style.color="blue";
+        //     }
+        // }
+
+
+        function changeStyling()
+        {
+            var element = document.getElementsByClassName("mypara");
+            for (var x=0;x<element.length;x++)
+            {
+                element[x].style.color='red';
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- <p>This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p>This is paragraph 3</p>
+    <p>This is paragraph 4</p>
+    <p>This is paragraph 5</p>
+    <br>
+    <button onclick="changeStyling()">Click Me</button>
+     -->
+
+    <p id="p1" class="mypara">This is paragraph 1</p>
+    <p>This is paragraph 2</p>
+    <p class="mypara">This is paragraph 3</p>
+    <p>This is paragraph 4</p>
+    <p class="mypara">This is paragraph 5</p>
+    <a class="mypara" href="#">This is the anchor tag</a>
+    <br>
+    <button onclick="changeStyling()">Click Me</button>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script type="text/javascript">
+
+        // \d - match any digit (equal to [0-9])
+        // \w - match any word characters (a-z, A-Z,0-9, & _)
+        // \s - match white space character (eg - spaces & tabs)
+        // \t - match a tab only.
+        function validate()
+        {
+            var text = document.getElementById("text1").value;
+            // Mobile validation
+            // var regex = /^[7-9]\d{9}$/;
+
+            // String validation
+            // var regex = /^[5-9][a-z]{5}0$/;
+
+            // Email validation
+            var regex = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,20})(.[a-z]){2,10}?$/;
+            if (regex.test(text))
+            {
+                document.getElementById("lbltext").innerHTML="Valid";
+                document.getElementById("lbltext").style.visibility="visible";
+                document.getElementById("lbltext").style.color="green";
+            }
+            else
+            {
+                document.getElementById("lbltext").innerHTML="InValid";
+                document.getElementById("lbltext").style.visibility="visible";
+                document.getElementById("lbltext").style.color="red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return validate()" action="15_1_message.html">
+        <input id="text1" placeholder="Email"
+        type="text" required/>
+        <label id="lbltext" style="color: red; visibility: hidden;">Invalid Username</label>
+        <br><br>
+    
+        <br><br>
+        <button onclick="validate()" type="button">Submit</button>
+    </form>
+</body>
+</html>

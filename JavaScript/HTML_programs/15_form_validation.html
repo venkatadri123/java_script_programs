@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <script type="text/javascript">
+        function validate()
+        {
+            var username = document.getElementById("uname");
+            var password = document.getElementById("pass");
+            if (username.value.trim() == "")
+            {
+                // alert("Blank Username");
+                username.style.border = "solid 3px red"
+                document.getElementById("lbluser").style.visibility="visible"
+                return false;
+            }
+            else if (password.value.trim() == "")
+            {
+                // alert("Blank Password");
+                username.style.border = "solid 2px blue"
+                document.getElementById("lblpass").style.visibility="visible"
+                return false;
+            }
+            else if(password.value.length<5)
+            {
+                alert("Password too short")
+                return false;
+            }
+            else 
+            {
+                alert(password.value)
+                alert(username.value)
+                true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return validate()" action="15_1_message.html">
+        <input id="uname" placeholder="Username"
+        type="text" required/>
+        <label id="lbluser" style="color: red; visibility: hidden;">Invalid username</label>
+        <br><br>
+
+        <input id="pass" placeholder="Password"
+        type="password" required/>
+        <label id="lblpass" style="color: red; visibility: hidden;">Invalid password</label>
+
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
